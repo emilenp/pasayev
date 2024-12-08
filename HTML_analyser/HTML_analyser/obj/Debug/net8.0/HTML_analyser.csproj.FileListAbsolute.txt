@@ -1,0 +1,14 @@
+C:\Users\emilp\source\repos\HTML_analyser\HTML_analyser\bin\Debug\net8.0\HTML_analyser.exe
+C:\Users\emilp\source\repos\HTML_analyser\HTML_analyser\bin\Debug\net8.0\HTML_analyser.deps.json
+C:\Users\emilp\source\repos\HTML_analyser\HTML_analyser\bin\Debug\net8.0\HTML_analyser.runtimeconfig.json
+C:\Users\emilp\source\repos\HTML_analyser\HTML_analyser\bin\Debug\net8.0\HTML_analyser.dll
+C:\Users\emilp\source\repos\HTML_analyser\HTML_analyser\bin\Debug\net8.0\HTML_analyser.pdb
+C:\Users\emilp\source\repos\HTML_analyser\HTML_analyser\obj\Debug\net8.0\HTML_analyser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emilp\source\repos\HTML_analyser\HTML_analyser\obj\Debug\net8.0\HTML_analyser.AssemblyInfoInputs.cache
+C:\Users\emilp\source\repos\HTML_analyser\HTML_analyser\obj\Debug\net8.0\HTML_analyser.AssemblyInfo.cs
+C:\Users\emilp\source\repos\HTML_analyser\HTML_analyser\obj\Debug\net8.0\HTML_analyser.csproj.CoreCompileInputs.cache
+C:\Users\emilp\source\repos\HTML_analyser\HTML_analyser\obj\Debug\net8.0\HTML_analyser.dll
+C:\Users\emilp\source\repos\HTML_analyser\HTML_analyser\obj\Debug\net8.0\refint\HTML_analyser.dll
+C:\Users\emilp\source\repos\HTML_analyser\HTML_analyser\obj\Debug\net8.0\HTML_analyser.pdb
+C:\Users\emilp\source\repos\HTML_analyser\HTML_analyser\obj\Debug\net8.0\HTML_analyser.genruntimeconfig.cache
+C:\Users\emilp\source\repos\HTML_analyser\HTML_analyser\obj\Debug\net8.0\ref\HTML_analyser.dll
