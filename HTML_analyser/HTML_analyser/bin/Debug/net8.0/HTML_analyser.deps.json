@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "HTML_analyser/1.0.0": {
+        "runtime": {
+          "HTML_analyser.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HTML_analyser/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
