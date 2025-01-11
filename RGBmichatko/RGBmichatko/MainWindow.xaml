@@ -1,0 +1,50 @@
+﻿<Window x:Class="RGBmichatko.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RGBmichatko"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle HorizontalAlignment="Center" Height="434" Stroke="Black" VerticalAlignment="Center" Width="800">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/1.jpg" Stretch="UniformToFill" TileMode="None"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="rect" HorizontalAlignment="Left" Height="280" Margin="100,60,0,0" Stroke="Black" VerticalAlignment="Top" Width="200" Fill="Black">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Slider x:Name="sli_red" HorizontalAlignment="Left" Margin="400,100,0,0" VerticalAlignment="Top" Width="255" Background="{x:Null}" Maximum="255" ValueChanged="sli_red_ValueChanged"/>
+        <Slider x:Name="sli_green" HorizontalAlignment="Left" Margin="400,200,0,0" VerticalAlignment="Top" Width="255" Background="{x:Null}" Maximum="255" ValueChanged="sli_green_ValueChanged"/>
+        <Slider x:Name="sli_blue" HorizontalAlignment="Left" Margin="400,300,0,0" VerticalAlignment="Top" Width="255" Background="{x:Null}" Maximum="255" ValueChanged="sli_blue_ValueChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="400,60,0,0" TextWrapping="Wrap" Text="Red" VerticalAlignment="Top" Width="70" Height="30" FontFamily="Tahoma" FontSize="20" Background="Red" TextAlignment="Center" Foreground="White">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="400,160,0,0" TextWrapping="Wrap" Text="Green" VerticalAlignment="Top" Width="70" Height="30" FontFamily="Tahoma" FontSize="20" Background="Lime" TextAlignment="Center" Foreground="White">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="400,260,0,0" TextWrapping="Wrap" Text="Blue" VerticalAlignment="Top" Width="70" Height="30" FontFamily="Tahoma" FontSize="20" Background="Blue" TextAlignment="Center" Foreground="White">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBox x:Name="txtbox_blue" Margin="487,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30" HorizontalAlignment="Left" FontSize="16" FontFamily="Tahoma" FontWeight="Bold" TextChanged="txtbox_blue_TextChanged" Text="0"/>
+        <TextBox x:Name="txtbox_green" Margin="487,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30" HorizontalAlignment="Left" FontSize="16" FontFamily="Tahoma" FontWeight="Bold" TextChanged="txtbox_green_TextChanged" Text="0"/>
+        <TextBox x:Name="txtbox_red" Margin="487,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30" HorizontalAlignment="Left" FontSize="16" FontFamily="Tahoma" FontWeight="Bold" TextChanged="txtbox_red_TextChanged" Text="0"/>
+        <Rectangle HorizontalAlignment="Left" Height="30" Margin="100,20,0,0" Stroke="Black" VerticalAlignment="Top" Width="200" Fill="White">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Margin="100,20,0,0" TextWrapping="Wrap" Text="RGB míchatko" VerticalAlignment="Top" Height="30" Width="200" FontFamily="Tahoma" TextAlignment="Center" FontSize="24" FontWeight="Bold"/>
+
+
+    </Grid>
+</Window>
