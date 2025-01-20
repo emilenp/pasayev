@@ -1,0 +1,43 @@
+﻿<Window x:Class="VanGoghSimulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VanGoghSimulator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Grid.ColumnSpan="2">
+            <MenuItem Header="Soubor" Click="Save">
+                <MenuItem Header="Otevřít" Click="Open"/>
+                <MenuItem Header="Uložit"/>
+            </MenuItem>
+
+            <MenuItem Header="Upravit"/>
+        </Menu>
+
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Image Source="/paintbrush.png"/>
+            <Label Content="Tloušťka štětce:"/>
+            <Slider Width="150"/>
+            <Label Content="Barva štětce:"/>
+            <Button x:Name="btn1" Width="40" Height="40" Click="RGBpicker"/>
+        </StackPanel>
+
+        <Canvas x:Name="surface" Grid.Row="2" Grid.ColumnSpan="2" MouseMove="Canvas_MouseMove" MouseDown="Canvas_MouseDown"/>
+
+    </Grid>
+    
+</Window>
