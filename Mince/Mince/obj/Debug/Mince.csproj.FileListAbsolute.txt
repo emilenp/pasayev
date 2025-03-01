@@ -1,0 +1,7 @@
+C:\Users\emilp\source\repos\Mince\Mince\bin\Debug\Mince.exe.config
+C:\Users\emilp\source\repos\Mince\Mince\bin\Debug\Mince.exe
+C:\Users\emilp\source\repos\Mince\Mince\bin\Debug\Mince.pdb
+C:\Users\emilp\source\repos\Mince\Mince\obj\Debug\Mince.csproj.AssemblyReference.cache
+C:\Users\emilp\source\repos\Mince\Mince\obj\Debug\Mince.csproj.CoreCompileInputs.cache
+C:\Users\emilp\source\repos\Mince\Mince\obj\Debug\Mince.exe
+C:\Users\emilp\source\repos\Mince\Mince\obj\Debug\Mince.pdb
