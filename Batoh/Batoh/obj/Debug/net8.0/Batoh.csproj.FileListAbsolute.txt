@@ -1,0 +1,14 @@
+C:\Users\emilp\source\repos\Batoh\Batoh\bin\Debug\net8.0\Batoh.exe
+C:\Users\emilp\source\repos\Batoh\Batoh\bin\Debug\net8.0\Batoh.deps.json
+C:\Users\emilp\source\repos\Batoh\Batoh\bin\Debug\net8.0\Batoh.runtimeconfig.json
+C:\Users\emilp\source\repos\Batoh\Batoh\bin\Debug\net8.0\Batoh.dll
+C:\Users\emilp\source\repos\Batoh\Batoh\bin\Debug\net8.0\Batoh.pdb
+C:\Users\emilp\source\repos\Batoh\Batoh\obj\Debug\net8.0\Batoh.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emilp\source\repos\Batoh\Batoh\obj\Debug\net8.0\Batoh.AssemblyInfoInputs.cache
+C:\Users\emilp\source\repos\Batoh\Batoh\obj\Debug\net8.0\Batoh.AssemblyInfo.cs
+C:\Users\emilp\source\repos\Batoh\Batoh\obj\Debug\net8.0\Batoh.csproj.CoreCompileInputs.cache
+C:\Users\emilp\source\repos\Batoh\Batoh\obj\Debug\net8.0\Batoh.dll
+C:\Users\emilp\source\repos\Batoh\Batoh\obj\Debug\net8.0\refint\Batoh.dll
+C:\Users\emilp\source\repos\Batoh\Batoh\obj\Debug\net8.0\Batoh.pdb
+C:\Users\emilp\source\repos\Batoh\Batoh\obj\Debug\net8.0\Batoh.genruntimeconfig.cache
+C:\Users\emilp\source\repos\Batoh\Batoh\obj\Debug\net8.0\ref\Batoh.dll
