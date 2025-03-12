@@ -12,6 +12,7 @@ namespace Mince
         {
             while (true)
             {
+                // načtení hodnot
                 int[] coins = Console.ReadLine().Split().Select(x => int.Parse(x)).OrderByDescending(x => x).ToArray();
                 int goal = int.Parse(Console.ReadLine());
                 Console.WriteLine();
@@ -20,7 +21,7 @@ namespace Mince
                 {
                     Console.WriteLine("Nelze");
                 }
-                else
+                else 
                 {
                     FindCombinations(coins, goal, coins.Max(), new List<int>());
                 }
@@ -30,18 +31,20 @@ namespace Mince
         
         static void FindCombinations(int[] coins, int goal, int last, List<int> current)
         {   
-            if (goal == 0)
+            if (goal == 0) // od cíle se odečítají použité mince - pokud se cíl bude rovnat 0, znamená to, že součet použitých mincí v current se už rovná cíli - tj. byla dokončena jedna kombinace
             {
-                Console.WriteLine(string.Join(" ", current));
+                Console.WriteLine(string.Join(" ", current)); // vypíše list a vrátí
                 return;
             }
-            foreach (int coin in coins)
+            foreach (int coin in coins) // chceme zkoumat možnosti kombinací pro každou mincí
             {
-                if (coin <= goal && coin <= last)
+                if (coin <= goal && coin <= last) // nechceme přesahnout cíl, nechceme vzít větší minci než minulou abysme nevytvořili víc stejných kombinací v jiném pořadí
                 {
-                    current.Add(coin);
-                    FindCombinations(coins, goal - coin, coin, current);
-                    current.RemoveAt(current.Count - 1);
+                    current.Add(coin); // přidáme minci "X" do listu
+                    FindCombinations(coins, goal - coin, coin, current); 
+                    // rekurzivně voláme funkcí s odečtením mince X od cíle a s listem, který obsahuje minci X. Opakování než  se cíl pro konkrétní větev bude rovnat 0.
+                    current.RemoveAt(current.Count - 1); 
+                    // backtracking - smažeme minci X abychom mohli opakovat hledání nových kombinací pro další minci Y v této určité pozici v listu, kde byla mince X. 
                 }
             }
         }
