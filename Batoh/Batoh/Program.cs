@@ -19,20 +19,20 @@ namespace Knapsack
             }
 
             List<int> bestItems = new List<int>();
-            int maxValue = 0;
+            int maxImportance = 0;
 
-            FindBestComboWombo(weights, importances, capacity, pairs, new List<int>(), ref maxValue, bestItems);
+            FindBestCombo(weights, importances, capacity, pairs, new List<int>(), ref maxImportance, bestItems);
 
-            Console.WriteLine(maxValue);
+            Console.WriteLine(maxImportance);
             Console.WriteLine(string.Join(" ", bestItems.Select(i => i + 1)));
         }
 
-        static void FindBestComboWombo(int[] weights, int[] importances, int capacity, Dictionary<int, (int, int)> pairs, List<int> used, ref int maxValue, List<int> bestItems)
+        static void FindBestCombo(int[] weights, int[] importances, int capacity, Dictionary<int, (int, int)> pairs, List<int> used, ref int maxImportance, List<int> bestItems)
         {
-            int currentValue = used.Sum(i => pairs[i].Item2);
-            if (currentValue > maxValue)
+            int current = used.Sum(i => pairs[i].Item2);
+            if (current > maxImportance)
             {
-                maxValue = currentValue;
+                maxImportance = current;
                 bestItems.Clear();
                 bestItems.AddRange(used);
             }
@@ -42,7 +42,7 @@ namespace Knapsack
                 if (!used.Contains(pair.Key) && pair.Value.Item1 <= capacity)
                 {
                     used.Add(pair.Key);
-                    FindBestComboWombo(weights, importances, capacity - pair.Value.Item1, pairs, used, ref maxValue, bestItems);
+                    FindBestCombo(weights, importances, capacity - pair.Value.Item1, pairs, used, ref maxImportance, bestItems);
                     used.RemoveAt(used.Count - 1);
                 }
             }
