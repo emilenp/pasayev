@@ -21,13 +21,13 @@ namespace Knapsack
             List<int> bestItems = new List<int>();
             int maxImportance = 0;
 
-            FindBestCombo(weights, importances, capacity, pairs, new List<int>(), ref maxImportance, bestItems);
+            FindComb(weights, importances, capacity, pairs, new List<int>(), ref maxImportance, bestItems);
 
             Console.WriteLine(maxImportance);
             Console.WriteLine(string.Join(" ", bestItems.Select(i => i + 1)));
         }
 
-        static void FindBestCombo(int[] weights, int[] importances, int capacity, Dictionary<int, (int, int)> pairs, List<int> used, ref int maxImportance, List<int> bestItems)
+        static void FindComb(int[] weights, int[] importances, int capacity, Dictionary<int, (int, int)> pairs, List<int> used, ref int maxImportance, List<int> bestItems)
         {
             int current = used.Sum(i => pairs[i].Item2);
             if (current > maxImportance)
@@ -42,7 +42,7 @@ namespace Knapsack
                 if (!used.Contains(pair.Key) && pair.Value.Item1 <= capacity)
                 {
                     used.Add(pair.Key);
-                    FindBestCombo(weights, importances, capacity - pair.Value.Item1, pairs, used, ref maxImportance, bestItems);
+                    FindComb(weights, importances, capacity - pair.Value.Item1, pairs, used, ref maxImportance, bestItems);
                     used.RemoveAt(used.Count - 1);
                 }
             }
