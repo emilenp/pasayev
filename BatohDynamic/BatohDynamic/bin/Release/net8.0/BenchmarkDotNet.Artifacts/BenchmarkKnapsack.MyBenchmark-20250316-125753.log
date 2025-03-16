@@ -1,0 +1,20 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\afc8c6f4-d78d-4885-8cf4-25adbf27c7d7\obj\Release\net8.0/" /p:OutDir="C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\afc8c6f4-d78d-4885-8cf4-25adbf27c7d7\bin\Release\net8.0/" /p:OutputPath="C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\afc8c6f4-d78d-4885-8cf4-25adbf27c7d7\bin\Release\net8.0/" in C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\afc8c6f4-d78d-4885-8cf4-25adbf27c7d7
+// command took 2.79 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\afc8c6f4-d78d-4885-8cf4-25adbf27c7d7\obj\Release\net8.0/" /p:OutDir="C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\afc8c6f4-d78d-4885-8cf4-25adbf27c7d7\bin\Release\net8.0/" /p:OutputPath="C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\afc8c6f4-d78d-4885-8cf4-25adbf27c7d7\bin\Release\net8.0/" --output "C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\afc8c6f4-d78d-4885-8cf4-25adbf27c7d7\bin\Release\net8.0/" in C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\afc8c6f4-d78d-4885-8cf4-25adbf27c7d7
+// command took 6.67 sec and exited with 0
+// ***** Done, took 00:00:09 (9.6 sec)   *****
+// Found 2 benchmarks:
+//   MyBenchmark.Knapsack_Backtracking: DefaultJob
+//   MyBenchmark.Knapsack_DynamicProgramming: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: MyBenchmark.Knapsack_Backtracking: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet afc8c6f4-d78d-4885-8cf4-25adbf27c7d7.dll --anonymousPipes 1256 1172 --benchmarkName BenchmarkKnapsack.MyBenchmark.Knapsack_Backtracking --job Default --benchmarkId 0 in C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\afc8c6f4-d78d-4885-8cf4-25adbf27c7d7\bin\Release\net8.0
+// BeforeAnythingElse

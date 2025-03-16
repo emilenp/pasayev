@@ -1,0 +1,239 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\1db43ae2-a684-4fbf-8175-0cdd4b786d86\obj\Release\net8.0/" /p:OutDir="C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\1db43ae2-a684-4fbf-8175-0cdd4b786d86\bin\Release\net8.0/" /p:OutputPath="C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\1db43ae2-a684-4fbf-8175-0cdd4b786d86\bin\Release\net8.0/" in C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\1db43ae2-a684-4fbf-8175-0cdd4b786d86
+// command took 1.81 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\1db43ae2-a684-4fbf-8175-0cdd4b786d86\obj\Release\net8.0/" /p:OutDir="C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\1db43ae2-a684-4fbf-8175-0cdd4b786d86\bin\Release\net8.0/" /p:OutputPath="C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\1db43ae2-a684-4fbf-8175-0cdd4b786d86\bin\Release\net8.0/" --output "C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\1db43ae2-a684-4fbf-8175-0cdd4b786d86\bin\Release\net8.0/" in C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\1db43ae2-a684-4fbf-8175-0cdd4b786d86
+// command took 5.97 sec and exited with 0
+// ***** Done, took 00:00:07 (7.87 sec)   *****
+// Found 2 benchmarks:
+//   MyBenchmark.Knapsack_Backtracking: DefaultJob
+//   MyBenchmark.Knapsack_DynamicProgramming: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: MyBenchmark.Knapsack_Backtracking: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 1db43ae2-a684-4fbf-8175-0cdd4b786d86.dll --anonymousPipes 1296 1292 --benchmarkName BenchmarkKnapsack.MyBenchmark.Knapsack_Backtracking --job Default --benchmarkId 0 in C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\1db43ae2-a684-4fbf-8175-0cdd4b786d86\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 8.0.8 (8.0.824.36612), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 185600.00 ns, 185.6000 us/op
+WorkloadJitting  1: 1 op, 4007500.00 ns, 4.0075 ms/op
+
+OverheadJitting  2: 16 op, 176700.00 ns, 11.0438 us/op
+WorkloadJitting  2: 16 op, 623600.00 ns, 38.9750 us/op
+
+WorkloadPilot    1: 16 op, 424000.00 ns, 26.5000 us/op
+WorkloadPilot    2: 32 op, 960600.00 ns, 30.0188 us/op
+WorkloadPilot    3: 64 op, 1957800.00 ns, 30.5906 us/op
+WorkloadPilot    4: 128 op, 4378400.00 ns, 34.2063 us/op
+WorkloadPilot    5: 256 op, 7514700.00 ns, 29.3543 us/op
+WorkloadPilot    6: 512 op, 14568000.00 ns, 28.4531 us/op
+WorkloadPilot    7: 1024 op, 28231800.00 ns, 27.5701 us/op
+WorkloadPilot    8: 2048 op, 54763900.00 ns, 26.7402 us/op
+WorkloadPilot    9: 4096 op, 132996500.00 ns, 32.4698 us/op
+WorkloadPilot   10: 8192 op, 37208800.00 ns, 4.5421 us/op
+WorkloadPilot   11: 16384 op, 70089000.00 ns, 4.2779 us/op
+WorkloadPilot   12: 32768 op, 148665100.00 ns, 4.5369 us/op
+WorkloadPilot   13: 65536 op, 267941400.00 ns, 4.0885 us/op
+WorkloadPilot   14: 131072 op, 528510900.00 ns, 4.0322 us/op
+
+OverheadWarmup   1: 131072 op, 277300.00 ns, 2.1156 ns/op
+OverheadWarmup   2: 131072 op, 283500.00 ns, 2.1629 ns/op
+OverheadWarmup   3: 131072 op, 276600.00 ns, 2.1103 ns/op
+OverheadWarmup   4: 131072 op, 276600.00 ns, 2.1103 ns/op
+OverheadWarmup   5: 131072 op, 276400.00 ns, 2.1088 ns/op
+
+OverheadActual   1: 131072 op, 276200.00 ns, 2.1072 ns/op
+OverheadActual   2: 131072 op, 276700.00 ns, 2.1111 ns/op
+OverheadActual   3: 131072 op, 276500.00 ns, 2.1095 ns/op
+OverheadActual   4: 131072 op, 279400.00 ns, 2.1317 ns/op
+OverheadActual   5: 131072 op, 276200.00 ns, 2.1072 ns/op
+OverheadActual   6: 131072 op, 276200.00 ns, 2.1072 ns/op
+OverheadActual   7: 131072 op, 276200.00 ns, 2.1072 ns/op
+OverheadActual   8: 131072 op, 278000.00 ns, 2.1210 ns/op
+OverheadActual   9: 131072 op, 276000.00 ns, 2.1057 ns/op
+OverheadActual  10: 131072 op, 277700.00 ns, 2.1187 ns/op
+OverheadActual  11: 131072 op, 276200.00 ns, 2.1072 ns/op
+OverheadActual  12: 131072 op, 277700.00 ns, 2.1187 ns/op
+OverheadActual  13: 131072 op, 279900.00 ns, 2.1355 ns/op
+OverheadActual  14: 131072 op, 376500.00 ns, 2.8725 ns/op
+OverheadActual  15: 131072 op, 289900.00 ns, 2.2118 ns/op
+
+WorkloadWarmup   1: 131072 op, 543814600.00 ns, 4.1490 us/op
+WorkloadWarmup   2: 131072 op, 530107600.00 ns, 4.0444 us/op
+WorkloadWarmup   3: 131072 op, 528219900.00 ns, 4.0300 us/op
+WorkloadWarmup   4: 131072 op, 521482700.00 ns, 3.9786 us/op
+WorkloadWarmup   5: 131072 op, 528077500.00 ns, 4.0289 us/op
+WorkloadWarmup   6: 131072 op, 517027100.00 ns, 3.9446 us/op
+WorkloadWarmup   7: 131072 op, 538113000.00 ns, 4.1055 us/op
+WorkloadWarmup   8: 131072 op, 525518000.00 ns, 4.0094 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 131072 op, 532006700.00 ns, 4.0589 us/op
+WorkloadActual   2: 131072 op, 540737100.00 ns, 4.1255 us/op
+WorkloadActual   3: 131072 op, 516892600.00 ns, 3.9436 us/op
+WorkloadActual   4: 131072 op, 525492600.00 ns, 4.0092 us/op
+WorkloadActual   5: 131072 op, 535526200.00 ns, 4.0857 us/op
+WorkloadActual   6: 131072 op, 530384100.00 ns, 4.0465 us/op
+WorkloadActual   7: 131072 op, 515637000.00 ns, 3.9340 us/op
+WorkloadActual   8: 131072 op, 531818000.00 ns, 4.0574 us/op
+WorkloadActual   9: 131072 op, 513036600.00 ns, 3.9142 us/op
+WorkloadActual  10: 131072 op, 531260700.00 ns, 4.0532 us/op
+WorkloadActual  11: 131072 op, 526997500.00 ns, 4.0207 us/op
+WorkloadActual  12: 131072 op, 528893600.00 ns, 4.0351 us/op
+WorkloadActual  13: 131072 op, 524225600.00 ns, 3.9995 us/op
+WorkloadActual  14: 131072 op, 527053100.00 ns, 4.0211 us/op
+WorkloadActual  15: 131072 op, 526246800.00 ns, 4.0149 us/op
+
+// AfterActualRun
+WorkloadResult   1: 131072 op, 531730000.00 ns, 4.0568 us/op
+WorkloadResult   2: 131072 op, 540460400.00 ns, 4.1234 us/op
+WorkloadResult   3: 131072 op, 516615900.00 ns, 3.9415 us/op
+WorkloadResult   4: 131072 op, 525215900.00 ns, 4.0071 us/op
+WorkloadResult   5: 131072 op, 535249500.00 ns, 4.0836 us/op
+WorkloadResult   6: 131072 op, 530107400.00 ns, 4.0444 us/op
+WorkloadResult   7: 131072 op, 515360300.00 ns, 3.9319 us/op
+WorkloadResult   8: 131072 op, 531541300.00 ns, 4.0553 us/op
+WorkloadResult   9: 131072 op, 512759900.00 ns, 3.9120 us/op
+WorkloadResult  10: 131072 op, 530984000.00 ns, 4.0511 us/op
+WorkloadResult  11: 131072 op, 526720800.00 ns, 4.0186 us/op
+WorkloadResult  12: 131072 op, 528616900.00 ns, 4.0330 us/op
+WorkloadResult  13: 131072 op, 523948900.00 ns, 3.9974 us/op
+WorkloadResult  14: 131072 op, 526776400.00 ns, 4.0190 us/op
+WorkloadResult  15: 131072 op, 525970100.00 ns, 4.0128 us/op
+// GC:  203 0 0 852492352 131072
+// Threading:  0 0 131072
+
+// AfterAll
+// Benchmark Process 15648 has exited with code 0.
+
+Mean = 4.019 μs, StdErr = 0.015 μs (0.37%), N = 15, StdDev = 0.057 μs
+Min = 3.912 μs, Q1 = 4.002 μs, Median = 4.019 μs, Q3 = 4.053 μs, Max = 4.123 μs
+IQR = 0.051 μs, LowerFence = 3.926 μs, UpperFence = 4.130 μs
+ConfidenceInterval = [3.958 μs; 4.080 μs] (CI 99.9%), Margin = 0.061 μs (1.51% of Mean)
+Skewness = -0.3, Kurtosis = 2.33, MValue = 2
+
+// ** Remained 1 (50.0%) benchmark(s) to run. Estimated finish 2025-03-16 13:01 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: MyBenchmark.Knapsack_DynamicProgramming: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 1db43ae2-a684-4fbf-8175-0cdd4b786d86.dll --anonymousPipes 1480 1468 --benchmarkName BenchmarkKnapsack.MyBenchmark.Knapsack_DynamicProgramming --job Default --benchmarkId 1 in C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\1db43ae2-a684-4fbf-8175-0cdd4b786d86\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 8.0.8 (8.0.824.36612), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 176600.00 ns, 176.6000 us/op
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Collections.Generic.KeyNotFoundException: The given key '5' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at BenchmarkKnapsack.MyBenchmark.FindUsedItems(Int32[,] m, Int32 maxCost, Int32 i, Int32 j, Dictionary`2 pairs, List`1 usedItems) in C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\Program.cs:line 100
+   at BenchmarkKnapsack.MyBenchmark.Knapsack_DynamicProgramming() in C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\Program.cs:line 89
+   at BenchmarkDotNet.Autogenerated.Runnable_1.WorkloadActionNoUnroll(Int64 invokeCount) in C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\1db43ae2-a684-4fbf-8175-0cdd4b786d86\1db43ae2-a684-4fbf-8175-0cdd4b786d86.notcs:line 503
+   at BenchmarkDotNet.Engines.Engine.Measure(Action`1 action, Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_1.Run(IHost host, String benchmarkName) in C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\1db43ae2-a684-4fbf-8175-0cdd4b786d86\1db43ae2-a684-4fbf-8175-0cdd4b786d86.notcs:line 368
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Users\emilp\source\repos\BatohDynamic\BatohDynamic\bin\Release\net8.0\1db43ae2-a684-4fbf-8175-0cdd4b786d86\1db43ae2-a684-4fbf-8175-0cdd4b786d86.notcs:line 57
+// AfterAll
+No Workload Results were obtained from the run.
+// Benchmark Process 32416 has exited with code -1.
+
+// ** Remained 0 (0.0%) benchmark(s) to run. Estimated finish 2025-03-16 13:01 (0h 0m from now) **
+Successfully reverted power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\BenchmarkKnapsack.MyBenchmark-report.csv
+  BenchmarkDotNet.Artifacts\results\BenchmarkKnapsack.MyBenchmark-report-github.md
+  BenchmarkDotNet.Artifacts\results\BenchmarkKnapsack.MyBenchmark-report.html
+
+// * Detailed results *
+MyBenchmark.Knapsack_Backtracking: DefaultJob
+Runtime = .NET 8.0.8 (8.0.824.36612), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 4.019 μs, StdErr = 0.015 μs (0.37%), N = 15, StdDev = 0.057 μs
+Min = 3.912 μs, Q1 = 4.002 μs, Median = 4.019 μs, Q3 = 4.053 μs, Max = 4.123 μs
+IQR = 0.051 μs, LowerFence = 3.926 μs, UpperFence = 4.130 μs
+ConfidenceInterval = [3.958 μs; 4.080 μs] (CI 99.9%), Margin = 0.061 μs (1.51% of Mean)
+Skewness = -0.3, Kurtosis = 2.33, MValue = 2
+-------------------- Histogram --------------------
+[3.882 μs ; 3.966 μs) | @@@
+[3.966 μs ; 4.145 μs) | @@@@@@@@@@@@
+---------------------------------------------------
+
+MyBenchmark.Knapsack_DynamicProgramming: DefaultJob
+Runtime = .NET 8.0.8 (8.0.824.36612), X64 RyuJIT AVX2; GC = Concurrent Workstation
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet v0.14.0, Windows 11 (10.0.22631.4890/23H2/2023Update/SunValley3)
+Intel Core i5-9300H CPU 2.40GHz, 1 CPU, 8 logical and 4 physical cores
+.NET SDK 8.0.401
+  [Host]     : .NET 8.0.8 (8.0.824.36612), X64 RyuJIT AVX2
+  DefaultJob : .NET 8.0.8 (8.0.824.36612), X64 RyuJIT AVX2
+
+
+| Method                      | Mean     | Error     | StdDev    | Gen0   | Allocated |
+|---------------------------- |---------:|----------:|----------:|-------:|----------:|
+| Knapsack_Backtracking       | 4.019 μs | 0.0609 μs | 0.0569 μs | 1.5488 |   6.35 KB |
+| Knapsack_DynamicProgramming |       NA |        NA |        NA |     NA |        NA |
+
+Benchmarks with issues:
+  MyBenchmark.Knapsack_DynamicProgramming: DefaultJob
+
+// * Warnings *
+Environment
+  Summary -> Detected error exit code from one of the benchmarks. It might be caused by following antivirus software:
+        - Avira Security (\\?\C:\Program Files\Avira\Endpoint Protection SDK\wsc_agent.exe)
+        - Windows Defender (windowsdefender://)
+        - McAfee VirusScan (C:\Program Files\McAfee.com\Agent\mcupdate.exe)
+        - Avast Antivirus (C:\Program Files\Avast Software\Avast\wsc_proxy.exe)
+Use InProcessEmitToolchain or InProcessNoEmitToolchain to avoid new process creation.
+
+
+// * Hints *
+Outliers
+  MyBenchmark.Knapsack_Backtracking: Default -> 1 outlier  was  detected (3.91 μs)
+
+// * Legends *
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Gen0      : GC Generation 0 collects per 1000 operations
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 μs      : 1 Microsecond (0.000001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:15 (15.21 sec), executed benchmarks: 2
+
+Global total time: 00:00:23 (23.63 sec), executed benchmarks: 2
+// * Artifacts cleanup *
+Artifacts cleanup is finished
